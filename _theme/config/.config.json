@@ -1,0 +1,25 @@
+{
+	"dev": {
+		"php": "source/**/*.php",
+		"css": "source/assets/scss/_build/*.scss",
+		"cssAll": "source/assets/scss/**/*.scss",
+		"js": "source/assets/js/**/*.js",
+		"img": "source/assets/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		"fonts": "source/assets/fonts/**/.",
+		"lib": "source/assets/lib/**/."
+	},
+	"build": {
+		"php": "../wp-content/themes/servix/**/*.php",
+		"css": "../wp-content/themes/servix/css/*.css",
+		"js": "../wp-content/themes/servix/js/*.js",
+		"img": "../wp-content/themes/servix/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		"fonts": "../wp-content/themes/servix/fonts/**/.",
+		"lib": "../wp-content/themes/servix/lib/**/."
+	},
+	"destination": "../wp-content/themes/servix/",
+	"bs": {
+		"proxy": "http://localhost",
+		"port": "3000",
+		"browser": "firefox"
+	}
+}

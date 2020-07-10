@@ -1,0 +1,187 @@
+.quem-somos-petabytes {
+	background-color: #ededed;
+	padding: 5rem 0.9375rem;
+	position: relative;
+
+	.quantidade{
+		padding: 0;
+		.quantidade-container {
+
+			.quantidade-wrapper {
+				border: 12px solid #babecb;
+				border-radius: 100%;
+				box-sizing: border-box;
+				position: relative;
+				height: 150px;
+				width: 150px;
+
+				.semi-circle{
+					height: 220px;
+					margin: 20px;
+					position: absolute;
+					top: -69px;
+					transform: rotate(110deg);
+					right: -60px;
+					width: 220px;
+				}
+
+				.quantidade-dados {
+					font-weight: bold;
+					left: 50%;
+					top: 50%;
+					line-height: 0.85;
+					position: absolute;
+					transform: translate(-50%, -50%);
+					width: max-content;
+
+					.block {
+						display: block;
+					}
+
+					.number {
+						color: #134a7f;
+						font-size: 4.5rem;
+						letter-spacing: -2px;
+					}
+
+					.text	{
+						line-height: 1;
+						font-size: 1.0625rem;
+					}
+				}
+			}
+		}
+	}
+
+	.tempo {
+		position: relative;
+		height: 170px;
+
+		.arrow-container {
+			width: 30%;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.tempo-container {
+			width: 60%;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			.tempo-wrapper {
+				.tempo-dados {
+					background: url(../img/calendario.png) center center no-repeat;
+					background-size: contain;
+					height: 99px;
+					text-align: center;
+					font-weight: bold;
+					padding-top: 15px;
+
+					.header {
+						.ultimos {
+							margin-top: 5px;
+							font-size: .9rem;
+						}
+					}
+
+					.conteudo {
+						display: table;
+						line-height: 1;
+						margin: 0 auto;
+						padding-top: 4px;
+
+						.numero {
+							color: $orange;
+							font-size: 3.8rem;
+							display: table-cell;
+							vertical-align: middle
+						}
+
+						.duracao {
+							display: table-cell;
+							vertical-align: middle
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		padding: 5rem 0;
+
+		.quantidade {
+			.quantidade-container {
+				.quantidade-wrapper {
+					border: 32px solid #babecb;
+					height: 340px;
+					margin: 0 auto;
+					width: 340px;
+
+					.semi-circle{
+						height: 450px;
+						margin: 0;
+						top: -92px;
+						right: -92px;
+						width: 450px;
+					}
+
+					.quantidade-dados {
+
+						.plus {
+							font-size: 2.25rem;
+						}
+
+						.number {
+							font-size: 8.4375rem;
+							letter-spacing: -0.5rem;
+						}
+
+						.text {
+							font-size: 2.1875rem;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+
+		.tempo {
+			height: 340px;
+
+			.tempo-container {
+				left: 85px;
+				right: auto;
+
+				.tempo-wrapper {
+					.tempo-dados {
+						height: 200px;
+
+						.header {
+							margin-top: 22px;
+
+							.ultimos {
+								font-size: 25px;
+							}
+						}
+
+						.conteudo {
+							margin-top: 10px;
+
+							.numero {
+								font-size: 100px;
+							}
+
+							.duracao {
+								font-size: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+.posts-list {
+	.single-post {
+		margin-top: 1.7rem;
+		overflow: hidden;
+		position: relative;
+
+		.post {
+			.img-header {
+				.image {}
+			}
+
+			.the-post {
+				background-color: $white;
+				padding: 15px 0;
+			}
+			.post-header {
+				margin-top: 1rem;
+				padding: 0 0.9375rem;
+
+				.post-date{
+					.date{
+						color: #7c7c7c;
+						font-size: 0.875rem;
+					}
+				}
+
+				.post-title {
+					.title {
+						font-size: 1.225rem;
+						font-weight: bold;
+						line-height: 1;
+						margin-top: 1.5rem;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			.post-body {
+				margin-top: 1rem;
+				padding: 0 0.9375rem;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+
+				.text {
+					line-height: 1.2;
+
+					strong,b {
+						color: #337ab7;
+					}
+				}
+
+				.leia-mais {
+					display: block;
+					text-align: right;
+
+					.text {
+						color: #7c7c7c;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.single-post {
+			overflow: visible;
+			margin-bottom: 100px;
+
+			.post {
+				.img-header,
+				.the-post {
+					display: inline-block;
+				}
+
+				.img-header {
+					width: 65%;
+
+					&::after {
+						content: '';
+						background-color: $orange;
+						bottom: -5px;
+						height: 85%;
+						left: -10px;
+						position: absolute;
+						width: 55%;
+						z-index: 0;
+					}
+
+					.image {
+						position: relative;
+						width: 100%;
+						z-index: 1;
+					}
+				}
+
+				.the-post {
+					bottom: 0;
+					box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+					position: absolute;
+					right: 0;
+					transform: translateY(40px);
+					width: 40%;
+					z-index: 2;
+
+					.post-header {
+
+						.title {
+							margin-top: 0.875rem;
+						}
+					}
+				}
+
+			}
+
+			&:nth-child(even) {
+				.post {
+					.img-header {
+						float: right;
+
+						&::after {
+							bottom: -10px;
+							left: auto;
+							right: -10px;
+						}
+					}
+
+					.the-post {
+						left: 0;
+						right: auto;
+						bottom: 0;
+						transform: translateY(40px);
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.single-post {
+			.post {
+				.img-header {
+					width: 70%;
+				}
+
+				.the-post {
+					padding: 30px 40px;
+				}
+			}
+		}
+	}
+}

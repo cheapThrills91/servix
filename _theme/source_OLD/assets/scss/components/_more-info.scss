@@ -1,0 +1,46 @@
+.more-info {
+	margin-top: 2rem;
+	padding: 0 0.9375rem;
+
+	.more {
+		font-weight: bold;
+		text-transform: uppercase;
+
+		.saiba {
+			font-size: .9rem;
+		}
+
+		.link {
+			text-decoration: underline;
+			transition: .3s ease;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.voltar {
+		display: block;
+		line-height: 1;
+		margin-top: 1.5rem;
+		transition: .3s ease;
+
+		.arrow {
+			margin-right: 0.3125rem;
+			width: 1rem;
+		}
+		.text	{
+			color: 	#818181;
+			font-size: .9rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			.text {
+				text-decoration: underline;
+			}
+		}
+	}
+}

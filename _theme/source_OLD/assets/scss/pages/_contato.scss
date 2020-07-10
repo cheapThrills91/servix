@@ -1,0 +1,11 @@
+.contato {
+	background-color: $white;
+	margin-top: 5.625rem;
+	padding-bottom: 2rem;
+
+	@media (min-width: 992px) {
+		.title-with-square {
+			margin-top: 2rem;
+		}
+	}
+}

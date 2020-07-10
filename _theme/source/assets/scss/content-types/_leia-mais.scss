@@ -1,0 +1,42 @@
+.leia-mais {
+	position: relative;
+	padding-right: 10px;
+
+	.text {
+		color: $white;
+		font-size: 1rem;
+		margin-right: 0.3125rem;
+		text-decoration: underline;
+		transition: 300ms;
+	}
+
+	.icon {
+		color: $orange;
+		font-weight: 700;
+		position: absolute;
+		right: 10px;
+		top: 0.3125rem;
+		transform: translateX(15px);
+	}
+
+	&:hover {
+		.text {
+			text-decoration: none;
+		}
+
+		.icon {
+			animation: slide1 400ms ease-in-out;
+		}
+
+		@keyframes slide1 {
+			0%,
+			100% {
+				transform: translateX(15px);
+			}
+
+			50% {
+				transform: translateX(20px);
+			}
+		}
+	}
+}

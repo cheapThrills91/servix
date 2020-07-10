@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: servix\n"
+"POT-Creation-Date: 2019-05-13 16:28-0300\n"
+"PO-Revision-Date: 2019-05-13 16:49-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../tema/servix\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: footer.php:16
+msgid "Endereços"
+msgstr "Addresses"
+
+#: functions.php:63
+msgid "header-menu"
+msgstr "header-menu"
+
+#: functions.php:64
+msgid "footer-menu"
+msgstr "footer-menu"
+
+#: functions.php:75
+msgid "Main Sidebar"
+msgstr "Main Sidebar"
+
+#: functions.php:77
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+
+#: includes/components/carousel-with-bullets.php:27
+msgid "Saiba mais"
+msgstr "Learn more"
+
+#: includes/components/cases-post-list.php:39
+#: includes/components/noticias-post-list.php:42
+msgid "Leia mais"
+msgstr "Read more"
+
+#: includes/components/header-menu.php:37
+msgid "Login de Suporte"
+msgstr "Login"
+
+#: includes/components/home-carousel-servicos.php:20
+#: includes/components/solucoes-servicos-tabs.php:16
+#: includes/components/solucoes-servicos-tabs.php:73
+msgid "Serviços"
+msgstr "Services"
+
+#: includes/components/home-carousel-solucoes.php:19
+#: includes/components/solucoes-servicos-tabs.php:13
+#: includes/components/solucoes-servicos-tabs.php:30
+msgid "Soluções"
+msgstr "Solutions"
+
+#: includes/components/home-noticias.php:14 page-noticias.php:15 single.php:14
+#: single.php:22
+msgid "Notícias"
+msgstr "News"
+
+#: includes/components/home-suporte.php:8
+msgid "Suporte 1º e 2º  Níveis"
+msgstr "1st and 2nd levels support "
+
+#: includes/components/home-suporte.php:8
+msgid "para mais de:"
+msgstr "for more than:"
+
+#: includes/components/quem-somos-chamados.php:11
+#: includes/components/quem-somos-colaboradores.php:7
+#: includes/components/quem-somos-colaboradores.php:61
+#: includes/components/quem-somos-petabytes.php:13
+msgid "+ de"
+msgstr "Over"
+
+#: includes/components/quem-somos-chamados.php:13
+msgid "chamados anuais"
+msgstr "calls per year"
+
+#: includes/components/quem-somos-chamados.php:22
+msgid "chamados atendidos"
+msgstr "solved calls"
+
+#: includes/components/quem-somos-chamados.php:34
+msgid "com tempo de resolução"
+msgstr "with resolution time"
+
+#: includes/components/quem-somos-chamados.php:38
+msgid "inferior a "
+msgstr "shorter than"
+
+#: includes/components/quem-somos-chamados.php:38
+msgid "do SLA contratado"
+msgstr "of hired SLA"
+
+#: includes/components/quem-somos-colaboradores.php:9
+msgid "colaboradores"
+msgstr "associates"
+
+#: includes/components/quem-somos-colaboradores.php:63
+msgid "clientes em<br> todo país"
+msgstr "clients over<br>the country"
+
+#: includes/components/quem-somos-integrador.php:19
+msgid "Maior Integrador na"
+msgstr "Biggest integrator in"
+
+#: includes/components/quem-somos-integrador.php:20
+msgid "América Latina"
+msgstr "Latin America"
+
+#: includes/components/quem-somos-integrador.php:21
+msgid "dos fabricantes"
+msgstr "of the companies"
+
+#: includes/components/quem-somos-mapa.php:14
+msgid "Presença em todo<br>território nacional"
+msgstr "Present in all<br>national territory"
+
+#: includes/components/quem-somos-mapa.php:21
+msgid "Presença em todo"
+msgstr "Present in all"
+
+#: includes/components/quem-somos-mapa.php:23
+msgid "território nacional"
+msgstr "national territory"
+
+#: includes/components/quem-somos-petabytes.php:15
+msgid "Petabytes <br>vendidos"
+msgstr "Sold<br>petabytes"
+
+#: includes/components/quem-somos-petabytes.php:29
+msgid "nos últimos"
+msgstr "in the last"
+
+#: includes/components/quem-somos-petabytes.php:33
+msgid "anos"
+msgstr "years"
+
+#: includes/components/share.php:2
+msgid "Compartilhe"
+msgstr "Share"
+
+#: page-cases.php:15 single-cases.php:13 single-cases.php:21
+msgid "Cases"
+msgstr "Cases"
+
+#: page-cases.php:22
+msgid "Soluções Servix que geram resultados"
+msgstr "Improvements through Servix solutions"
+
+#: page-contato.php:15 page-contato.php:25
+msgid "Contato"
+msgstr "Contact"
+
+#: page-parceiros.php:14
+msgid "Parceiros"
+msgstr "Partners"
+
+#: page-quem-somos.php:14
+msgid "Quem somos"
+msgstr "About us"
+
+#: page-trabalhe-conosco.php:16
+msgid "Trabalhe conosco"
+msgstr "Work with us"
+
+#: single-cases.php:52
+msgid "Voltar para cases"
+msgstr "Back to cases"
+
+#: single.php:53
+msgid "Voltar para notícias"
+msgstr "Back to news"

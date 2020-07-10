@@ -1,0 +1,123 @@
+.quem-somos-mapa {
+	padding: 50px 0px;
+
+	.map-container {
+		.map-wrapper {
+			.map {
+				position: relative;
+				max-width: 640px;
+				margin: 0 auto;
+
+				.pin {
+					position: absolute;
+
+					&.manaus 	{	left: 35%; top: 20%;	}
+					&.brasilia{	left: 56%; top: 38%;	}
+					&.goiania	{	left: 52%;	top: 40%;	}
+					&.curitiba{	left: 50%;	top: 54%;	}
+					&.itajai	 {	left: 52%;	top: 58%;	}
+					&.saopaulo 	{	left: 55%;	top: 50%;	}
+					&.riodejaneiro {	left: 64%;	top: 49%;	}
+					&.ilheus {	left: 69%;	top: 36%;	}
+				}
+
+				.chamada {
+					font-size: 12px;
+					font-weight: 700;
+					line-height: 1;
+					position: absolute;
+					right: 41px;
+					text-align: left;
+					top: 20px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.map-container {
+			.chamada-desktop {
+				height: auto;
+				min-height: 519px;
+				max-height: 639px;
+				position: relative;
+
+				.chamada {
+					color: $gray;
+					left: 50%;
+					position: absolute;
+					text-align: center;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+
+					.first-row {
+						font-size: 35px;
+						font-weight: 300;
+					}
+					.second-row {
+						font-size: 45px;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:768px) and (max-width: 991px) {
+		.map-container {
+			.map-wrapper {
+				.map {
+					.pin {
+						&.manaus {	left: 230px;	top: 135px;	}
+						&.brasilia {	left: 365px;	top: 234px;	}
+						&.goiania {	left: 339px;	top: 260px;	}
+						&.curitiba {	left: 336px;	top: 336px;	}
+						&.itajai {	left: 348px;	top: 363px;	}
+						&.saopaulo {	left: 367px;	top: 323px;	}
+						&.riodejaneiro {	left: 406px;	top: 308px;	}
+						&.ilheus {	left: 462px;	top: 200px;	}
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:992px) and (max-width: 1199px) {
+		.map-container {
+			.map-wrapper {
+				.map {
+					.pin {
+						&.manaus {	left: 183px;	top: 104px;	}
+						&.brasilia {	left: 296px;	top: 186px; }
+						&.goiania {	left: 270px;	top: 200px;	}
+						&.curitiba {	left: 275px;	top: 266px;	}
+						&.itajai {	left: 285px;	top: 293px;	}
+						&.saopaulo {	left: 303px;	top: 253px;	}
+						&.riodejaneiro {	left: 339px;	top: 246px;	}
+						&.ilheus {	left: 374px;	top: 158px;	}
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.map-container{
+			.map-wrapper {
+				.map {
+					.pin {
+						&.manaus {	left: 230px;	top: 135px;	}
+						&.brasilia {	left: 365px;	top: 234px;	}
+						&.goiania {	left: 339px;	top: 260px;	}
+						&.curitiba {	left: 336px;	top: 336px;	}
+						&.itajai {	left: 348px;	top: 363px;	}
+						&.saopaulo {	left: 367px;	top: 323px;	}
+						&.riodejaneiro {	left: 406px;	top: 308px;	}
+						&.ilheus {	left: 462px;	top: 200px;	}
+					}
+				}
+			}
+		}
+	}
+}

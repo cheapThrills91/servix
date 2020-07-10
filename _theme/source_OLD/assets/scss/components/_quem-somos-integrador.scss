@@ -1,0 +1,69 @@
+.quem-somos-integrador {
+	padding-top: 1.875rem;
+	position: relative;
+
+	.globo-container {
+		position: relative;
+	}
+
+	.description {
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	.logo {
+		margin: .9rem auto;
+		width: 70%;
+	}
+
+	@media (min-width:768px) and (max-width:991px) {
+		.description {
+			font-size: 1.375rem;
+			margin-top: 2rem;
+		}
+	}
+
+	@media (min-width:992px) {
+		padding: 3rem 0;
+
+		.globo-container {
+			float: right;
+		}
+
+		.description {
+			color: $gray;
+			font-size: 37px;
+			font-weight: 100;
+			line-height: 1.1;
+			margin: 1.6875rem 0 2.625rem 0;
+			text-align: center;
+
+			.america, .fabricantes {
+				display: inline-block;
+				font-weight: 700;
+				font-size: 3rem;
+			}
+
+			.america {
+				text-indent: -50px;
+			}
+
+			.fabricantes {
+				display: inline-block;
+				text-indent: 40px;
+			}
+		}
+
+		.logo {
+			margin: 2.5rem 0 0 123px;
+			width: auto;
+		}
+	}
+
+	@media (min-width:992px) and (max-width: 1199px) {
+		.logo {
+			margin: 2.5rem 0 0 75px;
+		}
+	}
+}

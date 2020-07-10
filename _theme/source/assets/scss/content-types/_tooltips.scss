@@ -1,0 +1,41 @@
+.tooltips {
+	text-align: center;
+	left: 50%;
+	padding: 0;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 1;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		border-style: solid;
+	}
+
+	&.top {
+		top: 0;
+
+		&::after {
+			border-width: 30px 35px 0 35px;
+			margin-left: -35px;
+		}
+
+		&.white {
+			&::after {
+				border-color: $whitesmoke transparent transparent transparent;
+			}
+		}
+
+		&.gray {
+			&::after {
+				border-color: #ededed transparent transparent transparent;
+			}
+		}
+	}
+
+
+
+
+}

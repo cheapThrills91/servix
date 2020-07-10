@@ -1,0 +1,40 @@
+.carousel-icons-text {
+	min-height: 12.1875rem;
+	padding-top: 1.25rem;
+
+	.icone {
+		text-align: center;
+		transition: .3s;
+	}
+	.icon {
+		filter: grayscale(100%);
+		margin: 0 auto;
+		max-width: 80px;
+		opacity: .2;
+	}
+
+	.text {
+		color: $lightgray;
+		margin-top: 10px;
+		transition: .3s;
+		text-align: center;
+	}
+
+	.swiper-slide-active {
+		.icone {
+			transform: scale(1.5);
+		}
+		.icon {
+			filter: grayscale(0);
+			opacity: 1;
+		}
+		.text {
+			color: $black;
+			margin-top: 30px;
+			text-align: center;
+
+		}
+	}
+
+
+}

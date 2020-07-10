@@ -1,0 +1,11 @@
+.noticias {
+	background-color: $whitesmoke;
+	margin-top: 5.625rem;
+	padding-bottom: 2rem;
+
+	.title-with-square {
+		.title {
+			background-color: $whitesmoke;
+		}
+	}
+}

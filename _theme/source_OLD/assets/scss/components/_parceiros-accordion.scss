@@ -1,0 +1,138 @@
+.parceiros-accordion {
+	.parceiros-tooltips{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	@media (min-width: 992px) {
+		.tab-content {
+			.lista {
+				.item {
+					background-color: transparent;
+					border: 0;
+					height: 90px;
+					display: table-cell;
+					vertical-align: middle;
+					cursor: default;
+
+					.logo {
+						width: 100%;
+					}
+
+					.texto {
+						&.plus {
+							display: none;
+						}
+					}
+
+					.parceiros-tooltips {
+						background-color: $white;
+						box-shadow: 0px 0px 5px rgba($color: $black, $alpha: 0.6);
+						display: block;
+						left: 0;
+						opacity: 0;
+						padding: 15px 0;
+						position: absolute;
+						top: 100%;
+						transition: opacity 400ms;
+						visibility: hidden;
+						width: 200%;
+						z-index: 9;
+
+						&::after {
+							content: '';
+							position: absolute;
+							top:	10px;
+							left: 10px;
+							width: 30px;
+							height: 30px;
+							border-left: 1px solid $blue;
+							border-top: 1px solid $blue;
+						}
+
+						&::before {
+							content: '';
+							position: absolute;
+							right:	10px;
+							bottom: 10px;
+							width: 30px;
+							height: 30px;
+							border-right: 1px solid $blue;
+							border-bottom: 1px solid $blue;
+						}
+
+						.tooltips-body {
+							padding: 10px 20px 0 20px;
+							height: 180px;
+							overflow: hidden;
+
+							.icone {
+								display: block;
+								margin: 0 auto;
+							}
+
+							.descricao {
+								color: $black;
+								font-weight: 400;
+								line-height: 1.1;
+								text-align: center;
+								width: 100%;
+
+								p {
+									font-size: 13px;
+								}
+
+								strong {
+									font-size: 1.2rem;
+									font-weight: 700;
+								}
+							}
+
+							&:nth-child(odd) {
+								.descricao {
+									strong {
+										color: $blue;
+									}
+								}
+							}
+
+							&:nth-child(even) {
+								.descricao {
+									strong {
+										color: $orange;
+									}
+								}
+							}
+						}
+					}
+
+					&:hover {
+						background-color: transparent;
+						border: 0;
+
+						.parceiros-tooltips {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.panel {
+		&:nth-child(4n),
+		&:nth-child(4n - 1) {
+			.accordion-link {
+				.item {
+					.parceiros-tooltips {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+# BEGIN Restrict WP-Admin Access To Specific IPs
+Order Deny,Allow
+Allow from 187.11.232.219
+Allow from 187.32.155.105
+#Allow from 177.79.23.213
+#Allow from 177.79.27.203
+Deny from all
+# END Block WP-Admin Access To Specific IPs
+

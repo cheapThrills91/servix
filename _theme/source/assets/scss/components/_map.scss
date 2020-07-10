@@ -1,0 +1,29 @@
+.map {
+	margin-top: 2rem;
+
+	.map-responsive{
+		height: 80vh;
+		overflow:hidden;
+		max-height: 350px !important;
+		position:relative;
+
+		iframe{
+			height:100%;
+			left:0;
+			max-height: 350px !important;
+			position:absolute;
+			top:0;
+			width:100% !important;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.map-responsive {
+			max-height: 550px !important;
+
+			iframe{
+				max-height: 550px !important;
+			}
+		}
+	}
+}

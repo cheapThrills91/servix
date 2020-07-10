@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+<head>
+	<title>MAPA DE ENTREGAS</title>
+	<script src="http://maps.google.com/maps/api/js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div class="row">
+		<div id="" class="col-sm-12" >
+			<div class="row">
+				<div class="col-sm-6"> 
+					<h3 align="center">PRIORIDADE POR EQUIPAMENTOS</h3>
+					<div id="map" style="width:100%;height:500px"></div>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,A52714&scale=5.0" ></img>
+					<input type="checkbox" name="checkqtd1"  onchange="dataMap(pData)"  id="checkqtd1"><label  for="checkqtd1" id="qtd1"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,F57C00&scale=5.0" ></img>
+					<input type="checkbox" name="checkqtd2"  onchange="dataMap(pData)"  id="checkqtd2"><label  for="checkqtd2"id="qtd2"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,673AB7&scale=5.0" ></img>
+					<input type="checkbox" name="checkqtd3"  onchange="dataMap(pData)"  id="checkqtd3"><label for="checkqtd3" id="qtd3"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,0288D1&scale=5.0'" ></img>
+					<input type="checkbox" name="checkqtd4"  onchange="dataMap(pData)"  id="checkqtd4"><label for="checkqtd4" id="qtd4"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,097138&scale=5.0" ></img>
+					<input type="checkbox" name="checkqtd5"  onchange="dataMap(pData)"  id="checkqtd5"><label  for="checkqtd5" id="qtd5"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,000&scale=5.0" ></img>
+					<input type="checkbox" name="checkqtdout"  onchange="dataMap(pData)"  id="checkqtdout"><label for="checkqtdout" id="qtdout"></label></input>
+				</div>
+				
+				<div class="col-sm-6"> 
+					<h3 align="center">STATUS POR EQUIPAMENTOS</h3> 
+					<div id="map2" style="width:100%;height:500px"></div>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,808080&scale=5.0" ></img>
+					<input type="checkbox" name="check2qtd1"  onchange="dataMap(pData)"  id="check2qtd1"><label for="check2qtd1" id="2qtd1"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,FFFF00&scale=5.0" ></img>
+					<input type="checkbox" name="check2qtd2"  onchange="dataMap(pData)"  id="check2qtd2"><label  for="check2qtd2" id="2qtd2"></label></input>
+					<br/>			
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,FF0000&scale=5.0" ></img>	
+					<input type="checkbox" name="check2qtd3"  onchange="dataMap(pData)"  id="check2qtd3"><label for="check2qtd3" id="2qtd3"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,A52714&scale=5.0'" ></img>
+					<input type="checkbox" name="check2qtd4"  onchange="dataMap(pData)"  id="check2qtd4"><label for="check2qtd4" id="2qtd4"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=FFFFFF,000080&scale=5.0" ></img>		
+					<input type="checkbox" name="check2qtd5"  onchange="dataMap(pData)"  id="check2qtd5"><label for="check2qtd5" id="2qtd5"></label></input>
+					<br/>
+					<img src="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,008000&scale=5.0" ></img>
+					<input type="checkbox" name="check2qtd6" onchange="dataMap(pData)"  id="check2qtd6"><label for="check2qtd6" id="2qtd6"></label></input>
+					
+					<div style="position: absolute;bottom: 0;right:20px;" >
+						<input type="checkbox" name="checkestoque" onchange="dataMap(pData)" id="checkestoque"><label for="checkestoque" id="estoque"></label></input><br/>
+						<input type="checkbox" name="checkordem" onchange="dataMap(pData)" id="checkordem"><label for="checkordem" id="ordem"></label></input><br/>
+						<b>Entregas DPF</b> - <img src="http://intranet.servix.com/img/LogoServix1.png" height="25px">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+	var map = null;
+	var map2 = null;
+	var coordenadas = [];
+	var mapCanvas = document.getElementById("map");
+	var mapCanvas2 = document.getElementById("map2");
+	var pData = null;
+	var markers = [];
+	
+	function myMap() {
+		$('#checkqtd1').attr('checked', getCookieTRUEorFALSE('checkqtd1'));
+		$('#checkqtd2').attr('checked', getCookieTRUEorFALSE('checkqtd2'));
+		$('#checkqtd3').attr('checked', getCookieTRUEorFALSE('checkqtd3'));
+		$('#checkqtd4').attr('checked', getCookieTRUEorFALSE('checkqtd4'));
+		$('#checkqtd5').attr('checked', getCookieTRUEorFALSE('checkqtd5'));
+		$('#checkqtdout').attr('checked', getCookieTRUEorFALSE('checkqtdout'));
+		
+		$('#check2qtd1').attr('checked', getCookieTRUEorFALSE('check2qtd1'));
+		$('#check2qtd2').attr('checked', getCookieTRUEorFALSE('check2qtd2'));
+		$('#check2qtd3').attr('checked', getCookieTRUEorFALSE('check2qtd3'));
+		$('#check2qtd4').attr('checked', getCookieTRUEorFALSE('check2qtd4'));
+		$('#check2qtd5').attr('checked', getCookieTRUEorFALSE('check2qtd5'));
+		$('#check2qtd6').attr('checked', getCookieTRUEorFALSE('check2qtd6'));
+		
+		if(getCookie("checkordem")!="")
+			$('#checkordem').attr('checked', getCookieTRUEorFALSE('checkordem'));
+		
+		$('#checkestoque').attr('checked', getCookieTRUEorFALSE('checkestoque'));
+
+		var lat = -14.529194;
+		var lng = -50.838675;
+
+		var mapOptions = {
+		center: new google.maps.LatLng(lat, lng),
+		zoom:4
+		};
+		map = new google.maps.Map(mapCanvas, mapOptions);
+		map2 = new google.maps.Map(mapCanvas2, mapOptions);
+		jQuery.getJSON('https://sheets.googleapis.com/v4/spreadsheets/1b-99YbAHUFUc1mDSD4EkZNLDRQkeFs6RuKs-jNAwKb4/values/A:AP?key=AIzaSyAd64m_sW9XBebqCFlTh6w883FSAfnKPoE', function(data){  
+			dataMap(data);
+			pData = data;
+		});
+	}
+	
+	function dataMap(data){	
+		for (var i = 0; i < markers.length; i++) {
+		  markers[i].setMap(null);
+		}
+		
+		var pri1 = 0 ;pri2 = 0; pri3 = 0; pri4 = 0; pri5 = 0; prioutra = 0;
+		var qdtFat = 0; qtdFin = 0; qtdOut2 = 0; servico= 0; instalacao = 0 ; entrega = 0 ;
+		var exibemap1 = false; exibemap2 = false;
+		var ordem = 0 ; var estoque = 0;
+		$.each( data.values, function( i, value ) {
+			exibemap1 = false;
+			exibemap2 = false;
+			
+			if (
+				($('#checkqtd1').is(':checked') && (value[8] =='1')) ||
+				($('#checkqtd2').is(':checked') && (value[8] =='2')) ||
+				($('#checkqtd3').is(':checked') && (value[8] =='3')) ||
+				($('#checkqtd4').is(':checked') && (value[8] =='4')) ||
+				($('#checkqtd5').is(':checked') && (value[8] =='5')) ||
+				($('#checkqtdout').is(':checked') && (value[8] !='1' && value[8] !='2' && value[8] !='3' && value[8] !='4' && value[8] !='5'))
+			){
+				exibemap1 = true;
+			}
+			
+			if (				
+				($('#check2qtd1').is(':checked') && (value[0] =='Aguardando start')) ||
+				($('#check2qtd2').is(':checked') && (value[0] =='Aguardando Faturamento')) ||
+				($('#check2qtd3').is(':checked') && (value[0] =='Aguardando entrega' || value[0]=='Aguardando instrução de entrega')) ||
+				($('#check2qtd4').is(':checked') && (value[0] =='Aguardando instalação')) ||
+				($('#check2qtd5').is(':checked') && (value[0] =='Instalado, aguardando faturar serviço')) ||
+				($('#check2qtd6').is(':checked') && (value[0] =='Finalizado'))
+			){
+				exibemap2 = true;
+			}			
+				
+			if (value[10]!=='Sem Ordem' || $('#checkordem').is(':checked')){
+				if (value[15].trim()!='SIM'){
+					estoque++;
+				}
+			}
+			if(value[15].trim()==='SIM' || $('#checkestoque').is(':checked')){			
+				if (value[10].trim()=='Sem Ordem'){
+					ordem++;
+				}
+			}
+			if(i!=0 && value[6].indexOf('Brasília')=== -1 
+				&& (value[10]!=='Sem Ordem' || $('#checkordem').is(':checked'))
+				&& (value[15].trim()==='SIM' || $('#checkestoque').is(':checked'))
+			){
+				var icon = ''; var icon2 = '';
+				if (exibemap2){
+					if (value[8]==1){
+						pri1++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,A52714&scale=5.0';
+					}else if (value[8]==2){
+						pri2++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,F57C00&scale=5.0';
+					}else if (value[8]==3){
+						pri3++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,673AB7&scale=5.0';
+					}else if (value[8]==4){
+						pri4++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,0288D1&scale=5.0';
+					}else if (value[8]==5){
+						pri5++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,097138&scale=5.0';
+					}else{
+						prioutra++;
+						icon = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,000&scale=5.0';
+					}
+							
+				}
+				if(exibemap1){
+					if(value[0]=='Aguardando start'){
+						qdtFat++;					
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=FFFFFF,808080&scale=5.0';
+					}else if (value[0]=='Finalizado'){					
+						qtdFin ++;
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,008000&scale=5.0';
+					}else if (value[0]=='Instalado, aguardando faturar serviço'){
+						servico++;		
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=FFFFFF,000080&scale=5.0';								
+					}else if (value[0]=='Aguardando instalação'){
+						instalacao++;
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,A52714&scale=5.0';
+					}else if (value[0]=='Aguardando entrega' || value[0]=='Aguardando instrução de entrega'){
+						entrega++;		
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,FF0000&scale=5.0';						
+					}else{
+						qtdOut2++;
+						icon2 = 'https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-pin-container-bg_4x.png,icons/onion/SHARED-mymaps-pin-container_4x.png,icons/onion/1899-blank-shape_pin_4x.png&highlight=ff000000,FFFF00&scale=5.0';
+					} 
+				}
+				if(exibemap1 && exibemap2){
+					MakerMAP(value[40], //lat
+						value[41], //long
+						value[1] + " - " + value[2], // nome
+						value[0], //situacao
+						value[3] + ", " + value[5] + ", " + value[6] + "-" + value[7] + " [" + value[4] + "]", //endereÃ§o 
+						value[8], // prioridade
+						value[10] + " - " + value[11]+ " [<b>PN: </b>" +value[13] +" - <b>Serial: </b>" + value[14] + "]", //item ordem
+						value[17] + " ["+ value[18] +" - " + value[19]+ "]",
+						value[20],
+						value[21],
+						value[22],
+						icon, //icone pri
+						icon2); //icone status
+					}
+				}
+		  
+		  });
+		  $('#qtd1').text('Prioridade 1 ( ' + pri1 + ' )');
+		  $('#qtd2').text('Prioridade 2 ( ' + pri2 + ' )');
+		  $('#qtd3').text('Prioridade 3 ( ' + pri3 + ' )');
+		  $('#qtd4').text('Prioridade 4 ( ' + pri4 + ' )');
+		  $('#qtd5').text('Prioridade 5 ( ' + pri5 + ' )');
+		  $('#qtdout').text('Outra prioridade ( ' + prioutra + ' )');
+		  
+		  $('#2qtd1').text('Aguardando start ( ' + qdtFat + ' )');
+		  $('#2qtd2').text('Aguardando faturamento ( ' + qtdOut2 + ' )');
+		  $('#2qtd3').text('Aguardando entrega ( ' + entrega + ' )');
+		  $('#2qtd4').text('Aguardando instalação ( ' + instalacao + ' )');
+		  $('#2qtd5').text('Instalado, aguardando faturar serviço ( ' + servico + ' )');
+		  $('#2qtd6').text('Finalizado ( ' + qtdFin + ' )');	  
+		  		  
+		  $('#ordem').text('Incluir sem ordem ( ' + ordem + ' )');	  
+		  $('#estoque').text('Incluir sem estoque ( ' + estoque + ' )');	  
+		  		  
+		  setCookie('checkqtd1', $('#checkqtd1').is(':checked'), 365);
+		  setCookie('checkqtd2', $('#checkqtd2').is(':checked'), 365);
+		  setCookie('checkqtd3', $('#checkqtd3').is(':checked'), 365);
+		  setCookie('checkqtd4', $('#checkqtd4').is(':checked'), 365);
+		  setCookie('checkqtd5', $('#checkqtd5').is(':checked'), 365);
+		  setCookie('checkqtdout', $('#checkqtdout').is(':checked'), 365);
+		  
+		  setCookie('check2qtd1', $('#check2qtd1').is(':checked'), 365);
+		  setCookie('check2qtd2', $('#check2qtd2').is(':checked'), 365);
+		  setCookie('check2qtd3', $('#check2qtd3').is(':checked'), 365);
+		  setCookie('check2qtd4', $('#check2qtd4').is(':checked'), 365);
+		  setCookie('check2qtd5', $('#check2qtd5').is(':checked'), 365);
+		  setCookie('check2qtd6', $('#check2qtd6').is(':checked'), 365);
+		  
+		  setCookie('checkordem', $('#checkordem').is(':checked'), 365);
+		  setCookie('checkestoque', $('#checkestoque').is(':checked'), 365);
+	}
+	
+			  
+	function MakerMAP(lat, lng, nome, situacao, endereco, prioridade, ordem, contato, agendamento, orientacoes, expectativa, icon, icon2){
+		var fixo = lat.split(".")[0];
+		var variavel = lat.split(".")[1].substring(0,4);
+		
+		var latTmp = fixo + '.' + variavel;
+		var i = 0;
+		for (i = 0; i < coordenadas.length; i++) { 
+			if( coordenadas[i]==latTmp){
+				variavel++;
+				latTmp = fixo + '.' + variavel;
+				i = 0;
+			}
+		}
+		lat = latTmp;
+		coordenadas.push(lat);		
+		
+		
+		
+	    var contentString = '<div id="content">'+
+								'<b>'+  nome +'</b>'+
+								'<div id="bodyContent">' +
+								'	<br/><b>Situação:</b> ' + situacao +
+								' - <b>Prioridade:</b> ' + prioridade +
+								'	<br/><b>Endereço:</b> ' + endereco +
+								'	<br/><b>Ordem:</b> ' + ordem +
+								'	<br/><b>Contato:</b> ' + contato +
+								'	<br/><b>Agendado:</b> ' + agendamento +
+								'	<br/><b>Expectativa de entrega:</b> ' + expectativa +
+								'	<br/><b>Orientação de entrega:</b> ' + orientacoes +
+								'</div>'+
+							'</div>';
+
+		  var infowindow = new google.maps.InfoWindow({
+			  content: contentString
+		  });
+
+		  var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(lat, lng),
+			map: map,
+			icon: icon,
+			animation: google.maps.Animation.DROP
+		  });     
+		  marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		  });
+		  markers.push(marker);
+		  	  
+		  
+		  var marker2 = new google.maps.Marker({
+			position: new google.maps.LatLng(lat, lng),
+			map: map2,
+			icon: icon2,
+			animation: google.maps.Animation.DROP
+		  });     
+		  
+		  marker2.addListener('click', function(){ 
+			infowindow.close(map2);
+			infowindow.open(map2, marker2);
+		  });		  
+		  
+		  markers.push(marker2);
+	  }  
+	  function setCookie(cname, cvalue, exdays) {
+		  var d = new Date();
+		  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		  var expires = "expires="+ d.toUTCString();
+		  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	 }
+	 
+	 function getCookieTRUEorFALSE(cname) {
+		var cookie = getCookie(cname);
+		if(cookie == null || cookie.trim()=="" || cookie.trim()=="true"){
+			return true;
+	    }else{
+			return false;
+		}
+	}
+	
+	function getCookie(cname) {
+		  var name = cname + "=";
+		  var decodedCookie = decodeURIComponent(document.cookie);
+		  var ca = decodedCookie.split(';');
+		  for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+			  c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+			  return c.substring(name.length, c.length);
+			}
+		  }
+		  return "";
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPxTDqYe6VsERqaycLoKrARQ2sSWY1Uck&callback=myMap"></script>
+</body>
+</html>

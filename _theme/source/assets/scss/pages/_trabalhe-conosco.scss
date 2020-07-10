@@ -1,0 +1,17 @@
+.trabalhe-conosco {
+	background-color: $white;
+	margin-top: 5.625rem;
+	padding-bottom: 2rem;
+
+	.title-with-square {
+		.title {
+			transform: translateX(-45%);
+		}
+	}
+
+	@media (min-width:992px) {
+		.title-with-square {
+			margin-top: 2rem;
+		}
+	}
+}

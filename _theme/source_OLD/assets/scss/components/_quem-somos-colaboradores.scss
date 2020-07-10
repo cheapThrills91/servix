@@ -1,0 +1,192 @@
+.quem-somos-colaboradores {
+	background-color: #ededed;
+	padding: 1.5rem 0;
+	position: relative;
+
+	.dados-wrapper {
+		min-height: 390px;
+		position: relative;
+
+		.dados {
+			position: absolute;
+
+			.block {
+				display: block;
+				line-height: .8;
+			}
+
+			.plus {
+				font-size: 22px;
+				font-weight: 700;
+			}
+
+			.number {
+				font-size: 70px;
+				font-weight: 700;
+				letter-spacing: -4px;
+
+				&.orange {
+					color: $orange;
+				}
+
+				&.blue {
+					color: $blue;
+				}
+			}
+
+			.text {
+				font-size: 19px;
+				font-weight: bold;
+			}
+		}
+
+		.colaboradores {
+			margin-bottom: 2rem;
+		}
+
+		.image {
+			margin: 2rem 0;
+			padding: 2rem 0;
+			position: relative;
+
+			.main-image {
+				.img-people {
+					margin: 0 auto;
+					transform: scale(.75);
+					z-index: 99;
+				}
+			}
+
+			.circle {
+				border-radius: 100%;
+				position: absolute;
+
+				&.orange {
+					background-color: $orange;
+					height: 105px;
+					left: 50%;
+					top: 0;
+					width: 105px;
+				}
+
+				&.blue {
+					background-color: $blue;
+					bottom: 0;
+					height: 125px;
+					right: 55%;
+					width: 125px;
+				}
+
+			}
+		}
+
+		.line {
+			position: absolute;
+
+			&.orange {
+				top: 60px;
+			}
+
+			&.blue {
+				bottom: 28px;
+				right: 0;
+			}
+		}
+
+		.clientes {
+			bottom: 40px;
+			right: 5px;
+		}
+	}
+	@media (min-width:320px) and (max-width: 370px) {
+		.dados-wrapper {
+			.colaboradores {
+				top: 10px;
+			}
+			.image {
+				.circle {
+					&.orange {
+						left: 58%;
+					}
+					&.blue {
+						bottom: -14px;
+						right: 60%;
+					}
+				}
+			}
+			.clientes {
+				right: 5px;
+			}
+
+			.line {
+				&.orange {
+					top: 55px;
+				}
+			}
+			.dados {
+				.number {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.dados-wrapper {
+			min-height: 450px;
+			.colaboradores {
+				top: 1.25rem;
+			}
+
+			.dados {
+				.block {
+					&.number {
+						display: inline-block;
+					}
+					&.text {
+						display: inline-block;
+					}
+				}
+			}
+
+			.image {
+				height: 400px;
+
+				.main-image {
+					left: 50%;
+					position: absolute;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					z-index: 5;
+
+					.img-people {
+						transform: scale(1.1);
+					}
+				}
+
+				.circle {
+					&.orange {
+						height: 123px;
+						left: 52%;
+						width: 123px;
+					}
+					&.blue {
+						bottom: auto;
+						height: 183px;
+						top: 240px;
+						right: 50%;
+						width: 183px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.dados-wrapper {
+			.line {
+				&.orange {}
+			}
+		}
+	}
+}

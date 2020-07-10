@@ -1,0 +1,18 @@
+p,
+.simple-paragraph {
+	font-size: 1rem;
+	line-height: 1.1;
+	font-style: normal;
+	margin-bottom: 0.625rem;
+	strong{
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	&.sub-title{
+		font-family: Heebo,sans-serif;
+		font-size: 1.12rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

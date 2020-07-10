@@ -1,0 +1,15 @@
+# BEGIN Restrict WP-Admin Access To Specific IPs
+Order Deny,Allow
+#Allow from 187.11.232.219
+# IP VPN Servix
+Allow from 187.32.155.105
+#Allow from 177.79.23.213
+#Allow from 177.79.27.203
+# IP LeanSale
+Allow from 169.57.191.237
+Allow from 186.209.30.141
+# IP Guilherme Urtiaga
+Allow from 186.204.89.172
+Deny from all
+# END Block WP-Admin Access To Specific IPs
+

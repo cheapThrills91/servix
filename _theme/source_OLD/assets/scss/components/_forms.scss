@@ -1,0 +1,38 @@
+.forms {
+	margin-top: 1.5rem;
+
+	.form {
+
+		.input {
+			border: 0;
+			border-bottom: 1px solid #134a7f;
+			border-radius: 0;
+			box-shadow: none;
+			color: #134a7f;
+			padding: 6px;
+
+			&::placeholder {
+				color: #134a7f;
+				font-weight: bold;
+			}
+		}
+
+		label {
+			color: #134a7f;
+		}
+
+		textarea {
+			border-radius: 0;
+			border: 1px solid #134a7f;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		.button	{
+			margin: 0;
+			float: right;
+		}
+	}
+}

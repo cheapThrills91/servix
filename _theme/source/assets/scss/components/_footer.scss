@@ -1,0 +1,136 @@
+.footer {
+	.footer-container {
+
+		.footer-title {
+			color: $white;
+			font-size: 2rem;
+			text-align: left;
+		}
+
+		.enderecos-container {
+			background-color: $footer-blue;
+			background-image: url('../img/bg-footer.jpg');
+			background-position: left bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 1.5625rem 0.9375rem;
+
+			.lista-enderecos {
+				list-style: none;
+				padding-left: 2.125rem;
+
+				.endereco {
+					margin-top: 1.875rem;
+					vertical-align: top;
+
+					p {
+						color: $white !important;
+						line-height: 1.1;
+						text-align: left;
+						a {
+							color: $white !important;
+						}
+					}
+
+					.cidade {
+						margin-bottom: 0;
+					}
+
+					.click-to-call {
+						color: $white;
+						cursor: pointer;
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+
+						&:visited,
+						&:link,
+						&:active {
+							color: $white;
+						}
+					}
+
+					hr{
+						margin-left: -116.25rem;
+						width: 120rem;
+					}
+				}
+			}
+		}
+
+		.social-media	{
+			margin-top: 0.9375rem;
+
+			.social-container {
+				text-align: center;
+
+				.social-list {
+					padding-left: 0;
+
+					.social-item {
+						display: inline-block;
+						list-style: none;
+						margin: 0 0.9375rem;
+
+						.icon {
+							color: #c8c8c8;
+							font-size: 1.5rem;
+							transition: .4s;
+
+							&:hover {
+								color: #666666;
+							}
+						}
+
+					}
+				}
+
+			}
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		.footer-container {
+			.enderecos-container {
+				.lista-enderecos{
+					clear: both;
+					.endereco {
+						display: inline-block;
+						height: 180px;
+						margin-top: 1rem;
+						overflow: hidden;
+
+						hr {
+							display: none;
+						}
+
+						.cidade {
+							margin-bottom: .625rem;
+						}
+					}
+
+					.hr-large {
+						clear: both;
+						margin-left: -270px;
+						width: 300px;
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.footer-container {
+			.enderecos-container {
+				.lista-enderecos{
+					.endereco {
+						height: 150px;
+					}
+				}
+			}
+		}
+	}
+}

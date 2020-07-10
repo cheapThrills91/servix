@@ -1,0 +1,17 @@
+.servicos-solucoes {
+	background-color: $whitesmoke;
+	margin-top: 5.625rem;
+	padding-bottom: 2rem;
+
+	.title-with-square {
+		.title {
+			background-color: $whitesmoke;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.title-with-square {
+			margin: 2rem 0;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.breadcrumbs {
+	color: #134a7f;
+	font-size: .89rem;
+	margin-top: 1.5rem;
+	padding: 0 0.9375rem;
+	text-transform: uppercase;
+	transition: .3s ease;
+
+	.link {
+		&:hover {
+			color: #134a7f;
+			text-decoration: underline;
+		}
+	}
+}

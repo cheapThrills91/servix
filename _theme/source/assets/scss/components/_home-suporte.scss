@@ -1,0 +1,55 @@
+.home-suporte {
+	background-color: $white;
+	background-image: url(../img/bg-home-suporte-esq.png), url(../img/bg-home-suporte-dir.png);
+	background-position: left bottom, right top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 45%;
+	padding: 0.9375rem;
+
+	.suporte-wrapper {
+		text-align: center;
+		color: #555555;
+
+		.titulo {
+			font-size: 1.75rem;
+			font-weight: 700;
+		}
+
+		.suporte-item	{
+			display: inline-block;
+			margin: 1.5rem 2rem;
+
+			.icon-number {
+				.icon, .number{
+					display: inline-block;
+					font-size: 4.0625rem;
+					font-weight: bold;
+					line-height: 1;
+				}
+
+				.icon {}
+
+				.number {
+					font-family: 'Roboto', sans-serif;
+				}
+			}
+
+			.legenda {
+				margin-top: .5rem;
+			}
+		}
+
+		.button {
+			margin-top: 2.5rem;
+
+			.text, .icon {
+				color: $white;
+			}
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		background-size: auto;
+		padding: 4.6875rem 0.9375rem;
+	}
+}

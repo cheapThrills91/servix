@@ -1,0 +1,42 @@
+.title-with-square {
+	margin-bottom: 1.4rem;
+	position: relative;
+	text-align: center;
+
+	rect {
+		fill: none;
+		stroke: $orange;
+		stroke-width: 2;
+		stroke-opacity: 1;
+		stroke-dasharray: 600;
+		stroke-dashoffset: 0;
+
+		&.rect-servicos,
+		&.rect-solucoes {
+			display: none;
+		}
+
+		&.animate {
+			display: block !important;
+			animation: draw 10s ease 0.215;
+		}
+	}
+
+	.title {
+		background: $white;
+		font-size: 1.8125rem;
+		font-weight: 700;
+		left: 50%;
+		line-height: 32px;
+		position: absolute;
+		text-transform: uppercase;
+		top: 31px;
+		transform: translateX(-50%);
+		white-space: nowrap
+	}
+
+	@keyframes draw {
+		0% { stroke-dashoffset: 600; }
+		100% { stroke-dashoffset: -1200; }
+	}
+}

@@ -1,0 +1,18 @@
+.share {
+	margin-top: 1.5rem;
+
+	.share-title {
+		font-size: 0.9rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.social-list {
+		list-style: none;
+		padding-left: 0;
+
+		.social-item {
+			display: inline-block;
+		}
+	}
+}

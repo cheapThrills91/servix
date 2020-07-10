@@ -1,0 +1,31 @@
+.quem-somos {
+	background-color: $whitesmoke;
+	margin-top: 5.625rem;
+	padding-bottom: 2rem;
+
+	.container {
+		.title-with-square {
+			.title {
+				background-color: $whitesmoke;
+				transform: translateX(-45%);
+			}
+		}
+
+		.description {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.container {
+
+			.description {
+				p {
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
+}
