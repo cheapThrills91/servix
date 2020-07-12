@@ -20,8 +20,8 @@
 					<img src="<?php echo get_template_directory_uri() ?>/img/logo-servix.png" alt="Logo Servix" class="img-responsive brand-logo">
 				</a>
 
-				<a href="https://www.servix.sistema.adm.br" target="_blank" class="button-login" rel="noopener" title="Acesse a área de suporte">
-					<?php echo _e('Login de Suporte', 'servix'); ?>
+				<a href="https://www.servix.sistema.adm.br" target="_blank" class="button-login" rel="noopener" title="Acesse a área de suporte teste">
+					<?php echo _e('Login de Suporte teste', 'servix'); ?>
 				</a>
 			</div>
 

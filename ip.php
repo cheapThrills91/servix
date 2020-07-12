@@ -2,7 +2,7 @@
 
 print(getRealIpAddr());
 
-function getRealIpAddr()
+/*function getRealIpAddr()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
     {
@@ -16,6 +16,12 @@ function getRealIpAddr()
     {
       $ip=$_SERVER['REMOTE_ADDR'];
     }
+    return $ip;
+}*/
+
+function getRealIpAddr()
+{
+    $ip=$_SERVER['http://18.191.32.44'];
     return $ip;
 }
 

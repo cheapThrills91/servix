@@ -94,6 +94,6 @@ require_once(ABSPATH . 'wp-settings.php');
 /* desativar a edição de arquivos via painel */
 define( 'DISALLOW_FILE_EDIT', false );
 
-//$url_site = 'http://3.17.99.222';
-//define('WP_HOME',$url_site);
-//define('WP_SITEURL',$url_site);
+$url_site = 'http://18.191.32.44';
+define('WP_HOME',$url_site);
+define('WP_SITEURL',$url_site);
