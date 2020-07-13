@@ -37,6 +37,6 @@
 
 			</div>
 			<!-- If we need pagination -->
-			<div class="swiper-pagination orange banner-pagination"></div>
+			<div id="paginacao" class="swiper-pagination orange banner-pagination"></div>
 	</div>
 </div>

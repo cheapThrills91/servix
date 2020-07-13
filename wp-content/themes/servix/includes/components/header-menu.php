@@ -1,6 +1,6 @@
 <header class="header-menu" data-script="HeaderMenu">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://18.191.32.44/servix.js"></script>
+<script type="text/javascript" src="http://servix.com/servix.js"></script>
 	<div class="container-fluid no-padding">
 
 		<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -23,7 +23,7 @@
 				</a>
 
 				<a href="https://www.servix.sistema.adm.br" target="_blank" class="button-login" rel="noopener" title="Acesse a área de suporte teste">
-					<?php echo _e('Login de Suporte teste', 'servix'); ?>
+					<?php echo _e('Login de Suporte', 'servix'); ?>
 				</a>
 			</div>
 
