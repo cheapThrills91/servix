@@ -45,6 +45,6 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   }
 }
